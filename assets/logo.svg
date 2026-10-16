@@ -1,0 +1,37 @@
+<svg viewBox="0 0 512 512" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+  <title>homebrew-tap</title>
+  <defs>
+    <!-- Beer / amber gradient: reads clearly on light and dark backgrounds -->
+    <linearGradient id="beer" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#F59E0B"/>
+      <stop offset="100%" stop-color="#B45309"/>
+    </linearGradient>
+    <!-- Subtle top gloss -->
+    <linearGradient id="gloss" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.18"/>
+      <stop offset="45%" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background tile -->
+  <rect width="512" height="512" rx="115" fill="url(#beer)"/>
+  <rect width="512" height="512" rx="115" fill="url(#gloss)"/>
+
+  <!-- Beer mug: foam head + body + handle, one clean white silhouette -->
+  <g fill="#FFFFFF">
+    <!-- Foam -->
+    <circle cx="178" cy="200" r="32"/>
+    <circle cx="228" cy="178" r="42"/>
+    <circle cx="284" cy="182" r="38"/>
+    <circle cx="322" cy="204" r="26"/>
+    <!-- Mug body -->
+    <path d="M164 210 h156 a12 12 0 0 1 12 12 v148 a22 22 0 0 1 -22 22 H186 a22 22 0 0 1 -22 -22 V222 a12 12 0 0 1 12 -12 z"/>
+  </g>
+  <!-- Handle (stroke overlaps the body so it merges into the silhouette) -->
+  <rect x="314" y="246" width="64" height="98" rx="28" fill="none" stroke="#FFFFFF" stroke-width="24"/>
+  <!-- Glass ridges -->
+  <g fill="#B45309" fill-opacity="0.75">
+    <rect x="212" y="240" width="13" height="118" rx="6.5"/>
+    <rect x="262" y="240" width="13" height="118" rx="6.5"/>
+  </g>
+</svg>
